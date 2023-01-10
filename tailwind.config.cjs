@@ -6,6 +6,10 @@ module.exports = {
       colors: {
         primary: '#192653',
         accent: '#FF5C00'
+      },
+      fontFamily: {
+        poppins: ['Poppins'],
+        'source-sans-pro': ["'Source Sans Pro'"]
       }
     }
   },
