@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: '#192653',
+        accent: '#FF5C00'
+      }
+    }
   },
   plugins: [
     require('autoprefixer'),
