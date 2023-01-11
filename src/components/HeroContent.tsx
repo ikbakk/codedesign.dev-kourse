@@ -4,7 +4,7 @@ function HeroContent() {
       <h2 className='text-2xl tracking-wide text-white lg:text-6xl'>
         Elevate Your Career to the Next Level
       </h2>
-      <p className='text-base tracking-wide text-white/80'>
+      <p className='text-base leading-loose tracking-wide text-white/80'>
         Get expert-led instruction from experienced professionals in Industry
         and gain valuable skills and knowledge that can be applied to your
         career or personal life.

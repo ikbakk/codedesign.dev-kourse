@@ -1,10 +1,18 @@
-function Card() {
+import { IoArrowForwardOutline } from 'react-icons/io5'
+
+type Classname = {
+  className?: string
+  imageSrc: string
+}
+
+function Card({ className, imageSrc }: Classname) {
   return (
-    <div className='flex w-[290px] flex-col overflow-hidden rounded-2xl'>
+    <div
+      className={`flex w-[290px] ${className} flex-col overflow-hidden rounded-2xl shadow-xl`}>
       <div className='w-full overflow-hidden object-cover'>
         <img
           className='duration-75 hover:scale-110'
-          src='../src/assets/card.png'
+          src={`${imageSrc}`}
           alt='/'
         />
       </div>
@@ -17,8 +25,9 @@ function Card() {
         <hr></hr>
         <div className='flex items-center justify-between'>
           <p className='text-xs'>13h 18min - 18 Lessons</p>
-          <a className='text-sm' href='#'>
-            View Details {`->`}
+          <a className='flex items-center space-x-1 text-sm' href='#'>
+            <p>View Details</p>
+            <IoArrowForwardOutline />
           </a>
         </div>
       </div>
