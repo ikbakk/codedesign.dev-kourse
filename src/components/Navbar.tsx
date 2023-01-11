@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { BiMenu } from 'react-icons/bi'
-import { AiOutlineClose } from 'react-icons/ai'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
