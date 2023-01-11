@@ -9,14 +9,14 @@ function Navbar() {
     setIsOpen(!isOpen)
   }
   return (
-    <>
+    <div className='p-4 md:px-28 md:pt-10'>
       <div className='hidden w-full flex-row items-center justify-between font-source-sans-pro md:flex'>
         <h3 className='text-xl font-semibold'>Kourse</h3>
         <ul className='hidden text-base text-white md:flex md:flex-row md:space-x-10'>
-          <li className='font-semibold'>Home</li>
-          <li>Courses</li>
-          <li>Post a Job</li>
-          <li>Contact Us</li>
+          <li className='font-semibold hover:cursor-pointer'>Home</li>
+          <li className='hover:cursor-pointer'>Courses</li>
+          <li className='hover:cursor-pointer'>Post a Job</li>
+          <li className='hover:cursor-pointer'>Contact Us</li>
         </ul>
         <button className='hidden rounded-lg bg-white/10 py-2 px-4 text-base md:block'>
           Sign Up
@@ -64,7 +64,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
